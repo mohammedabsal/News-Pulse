@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Affairs News</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="brand">
+                <img class="logo-img" src="./assets/img.png" alt="Logo" />
+                <div>
+                    <h2>Current Affairs Headlines</h2>
+                    <div class="subtitle">Top stories from around the world — refreshed live</div>
+                </div>
+            </div>
+            <div aria-hidden="true"></div>
+        </header>
+
+        <div class="search-row">
+            <input type="text" id="searchInput" placeholder="Search news (type to filter)..." aria-label="Search news" />
+        </div>
+
+        <main>
+            <div id="newsContainer" class="news-grid" aria-live="polite"></div>
+        </main>
+
+        <div class="attribution">Data provided by News API — design improved</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
